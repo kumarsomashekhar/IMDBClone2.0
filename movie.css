@@ -1,0 +1,65 @@
+*{
+    margin :0;
+    padding:0;
+}
+
+
+
+body{
+    background: linear-gradient(to right top,rgb(221, 94, 94),rgb(233, 233, 71));
+    height: 100vh;
+}
+
+.imdbID{
+    color: white;
+}
+
+
+.movieImg{
+    border-radius: 10px;
+    width: 90px;
+    height: 45px;
+}
+
+.btn{
+    border: 1px  rgb(139, 139, 56) solid;
+
+}
+
+.container{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: rgb(44,51,51);
+}
+
+#title {
+    color: white;
+}
+
+#rating{
+    color: white;
+}
+
+.fa-star{
+    color: rgb(253,206,35);
+}
+
+.card{
+    background-color: rgb(44,51,51);
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white;
+}
+
+.info-type{
+    color:  rgb(253,206,35);
+}
+
+.information{
+    color: rgb(124,169,236);
+}
