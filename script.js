@@ -70,17 +70,19 @@
       }
       suggestionList.push(data);
       const movieCard = document.createElement("div");
-      movieCard.setAttribute("class", "text-decoration");
+      // movieCard.setAttribute("class", "text-decoration");
 
       movieCard.innerHTML = `
         <div class="card my-2" data-id = " ${data.imdbID} ">
-        <a href="movie.html" >
-          <img
+          <a href="movie.html" >
+            <img
             src="${data.Poster} "
             class="card-img-top"
             alt="..."
+            height="350px"
             data-id = "${data.imdbID} "
-          />
+            />
+          </a>
           <div class="card-body text-star
             <h5 class="card-title" >
               <a href="movie.html" data-id = "${data.imdbID} "> ${data.Title}  </a>
@@ -96,7 +98,6 @@
               </button>
             </p>
           </div>
-        </a>
       </div>
     `;
       suggestionsContainer.prepend(movieCard);

@@ -28,12 +28,12 @@ function favMovies() {
       />
      <div class="movie-card-details">
       <p class="movie-name mt-3 mb-0">
-       <a href = "movie.html" class="fav-movie-name" data-id="${movie.Title}">${movie.Title}</a> 
+       <a href = "index.html" class="fav-movie-name" data-id="${movie.Title}">${movie.Title}</a> 
       </p>
       <small class="text-muted">${movie.Year}</small>
      </div>
 
-     <div class="delete-btn my-4">
+     <div class="delete-btn">
         <i class="fa-solid fa-trash-can" data-id="${movie.Title}"></i>
      </div>
     

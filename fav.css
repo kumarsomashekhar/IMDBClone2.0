@@ -1,5 +1,27 @@
+:root {
+  --default-text-color: #fff;
+  --logo-color: rgb(253, 206, 35);
+  --card-color: rgb(18, 21, 21);
+  --default-heart-color: rgb(207, 194, 194);
+  --heart-red-color: #ec0638;
+  --delete-button-color: #eb6582;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg,rgb(221, 94, 94),rgb(233, 233, 71));
+  
+}
+
+
 .navbar-brand img {
     border-radius: 10px;
+}
+
+.goback{
+  position: relative;
+  top: -2px;
 }
 
 #favorites-section {
@@ -11,14 +33,22 @@
     flex-direction: row;
     /* z-index: 1; */
     flex-wrap: wrap;
+    transition: background-color 0.3s ease;
   }
   
+  .animate__animated:hover{
+    background-color: rgb(224, 207, 52);
+  }
   
   .fav-movies-container {
-    /* overflow-y: scroll; */
+   position: relative;
+   right: 10px;
+   top: 10px;
     width: 90%;
-    height: 210px;
-    
+   height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   
   
@@ -28,11 +58,15 @@
   
   
   .fav-movie-card {
-    padding-right: 1rem;
+    position: relative;
+    top: -8px;
+    /* padding-right: 1rem; */
     width: 55%;
-    /* height: 95%; */
+    /* height: 200px; */
     background-color: transparent;
     overflow: hidden;
+    background-color: #ffa50a91;
+    border-radius: 10px;
   }
   
   .fav-movie-poster {
@@ -57,7 +91,11 @@
   
   .delete-btn {
     cursor: pointer;
-    
+    position: relative;
+    top: 20px;
+    height: 180px;
+    width:50px;
+
   }
   
   .fa-trash-can {
